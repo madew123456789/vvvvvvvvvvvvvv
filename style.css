@@ -1,23 +1,69 @@
-          
-<head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Include SweetAlert2 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-</head>
-<body>
-    <!-- Your webpage content goes here -->
-    <!-- Include SweetAlert2 JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            Swal.fire({
-                title: 'තොරණෙහි විස්තරය ලබා ගැනීමට අංකය මත Touch/Click කරන්න!',
-                icon: 'fa fa-exclamation-triangle'
-              
-            });
-        });
-    </script>
+    
+body {
+  background-image: url('https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/ezgif.com-optipng.png?v=1717218387211');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+<meta name="viewport" content="width=2048, initial-scale=1">
+</style>
+
+  .layer {
+
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:black;z-index: 1;
+  }
+  .swan{
+    position: absolute;
+    top: 470px;left: -50px; 
+    width:340px; height:340;
+  }
+  .thumb span { 
+    position:absolute;
+    visibility:hidden;
+    
+  }
+  .thumb:hover, .thumb:hover span { 
+    visibility:visible;
+    top:0;
+    left:100px; 
+    z-index:3;
+  }
+  #loading {
+            position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+     background-image: url("https://cdn.glitch.me/3e0381c4-a312-453a-a06d-22aaaffe8cb5/8064154-hd_1920_1080_30fps1-ezgif.com-video-to-apng-converter.png?v=1715322503433");
+    background-size: cover;
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 24px;
+      flex-direction: column;
+      text-align: center;
+      z-index: 9999;
+    }
+#loading {
+            position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 24px;
+      flex-direction: column;
+      text-align: center;
+      z-index: 9999;
+  
+  
